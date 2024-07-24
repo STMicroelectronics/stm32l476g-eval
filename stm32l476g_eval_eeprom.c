@@ -444,7 +444,11 @@ static uint32_t EEPROM_I2C_WritePage(uint8_t* pBuffer, uint16_t WriteAddr, uint3
   {
     return EEPROM_FAIL;
   }
-  
+
+  /* Waiting for EEPROM internal write cycle duration (5 ms): max delay required by
+  the M24M01 specification to ensure that the previous EEPROM access is finished */
+  HAL_Delay(5);
+
   /* Wait for EEPROM Standby state */
   if (EEPROM_I2C_WaitEepromStandbyState() != EEPROM_OK) 
   {

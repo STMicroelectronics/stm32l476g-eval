@@ -33,9 +33,18 @@
 <div class="col-sm-12 col-lg-8">
 <h1 id="update-history">Update History</h1>
 <div class="collapse">
-<input type="checkbox" id="collapse-section24" checked aria-hidden="true"> <label for="collapse-section24" aria-hidden="true">V2.1.7 / 09-Juin-2023</label>
+<input type="checkbox" id="collapse-section25" checked aria-hidden="true"> <label for="collapse-section25" aria-hidden="true">V2.1.8 / 24-Juin-2024</label>
 <div>
 <h2 id="main-changes">Main Changes</h2>
+<ul>
+<li>Update EEPROM_I2C_WritePage() API to add waiting EEPROM internal write cycle duration: Add 5ms max delay required by the M24M01 specification to ensure that the previous EEPROM access is finished.</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section24" aria-hidden="true"> <label for="collapse-section24" aria-hidden="true">V2.1.7 / 09-Juin-2023</label>
+<div>
+<h2 id="main-changes-1">Main Changes</h2>
 <ul>
 <li>All source files: update disclaimer to add reference to the new license agreement.</li>
 </ul>
@@ -44,7 +53,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section23" aria-hidden="true"> <label for="collapse-section23" aria-hidden="true">V2.1.6 / 11-February-2021</label>
 <div>
-<h2 id="main-changes-1">Main Changes</h2>
+<h2 id="main-changes-2">Main Changes</h2>
 <ul>
 <li>Minor update of Release Notes template</li>
 <li>Add License.md file for GitHub publication</li>
@@ -54,7 +63,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section22" aria-hidden="true"> <label for="collapse-section22" aria-hidden="true">V2.1.5 / 26-June-2020</label>
 <div>
-<h2 id="main-changes-2">Main Changes</h2>
+<h2 id="main-changes-3">Main Changes</h2>
 <ul>
 <li>Update common GPIO configuration in BSP_SD_MspInit() to remove internal pull-up</li>
 </ul>
@@ -63,7 +72,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section21" aria-hidden="true"> <label for="collapse-section21" aria-hidden="true">V2.1.4 / 22-November-2019</label>
 <div>
-<h2 id="main-changes-3">Main Changes</h2>
+<h2 id="main-changes-4">Main Changes</h2>
 <ul>
 <li>Enable the Sample Shift (SSHIFT) feature in <em>BSP_QSPI_Init()</em> to ensure the read data isn’t corrupted when prescaler is div/1</li>
 </ul>
@@ -72,7 +81,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section20" aria-hidden="true"> <label for="collapse-section20" aria-hidden="true">V2.1.3 / 18-October-2019</label>
 <div>
-<h2 id="main-changes-4">Main Changes</h2>
+<h2 id="main-changes-5">Main Changes</h2>
 <ul>
 <li>Minor update in release notes format</li>
 </ul>
@@ -81,7 +90,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section19" aria-hidden="true"> <label for="collapse-section19" aria-hidden="true">V2.1.2 / 03-April-2019</label>
 <div>
-<h2 id="main-changes-5">Main Changes</h2>
+<h2 id="main-changes-6">Main Changes</h2>
 <ul>
 <li>stm32l476g_eval_glass_lcd.c
 <ul>
@@ -97,7 +106,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section18" aria-hidden="true"> <label for="collapse-section18" aria-hidden="true">V2.1.1 / 27-July-2018</label>
 <div>
-<h2 id="main-changes-6">Main Changes</h2>
+<h2 id="main-changes-7">Main Changes</h2>
 <ul>
 <li>Release notes update to new format</li>
 </ul>
@@ -106,7 +115,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section17" aria-hidden="true"> <label for="collapse-section17" aria-hidden="true">V2.1.0 / 25-August-2017</label>
 <div>
-<h2 id="main-changes-7">Main Changes</h2>
+<h2 id="main-changes-8">Main Changes</h2>
 <ul>
 <li>stm32l476g_eval_sd.c/.h
 <ul>
@@ -121,7 +130,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section16" aria-hidden="true"> <label for="collapse-section16" aria-hidden="true">V2.0.0 / 17-February-2017</label>
 <div>
-<h2 id="main-changes-8">Main Changes</h2>
+<h2 id="main-changes-9">Main Changes</h2>
 <ul>
 <li>stm32l476g_eval_sd.c/.h
 <ul>
@@ -141,7 +150,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section15" aria-hidden="true"> <label for="collapse-section15" aria-hidden="true">V1.0.4 / 08-April-2016</label>
 <div>
-<h2 id="main-changes-9">Main Changes</h2>
+<h2 id="main-changes-10">Main Changes</h2>
 <ul>
 <li>stm32l476g_eval_audio.c/.h
 <ul>
@@ -164,7 +173,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section12" aria-hidden="true"> <label for="collapse-section12" aria-hidden="true">V1.0.3 / 29-January-2016</label>
 <div>
-<h2 id="main-changes-10">Main Changes</h2>
+<h2 id="main-changes-11">Main Changes</h2>
 <ul>
 <li>stm32l476g_eval.c
 <ul>
@@ -181,7 +190,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section11" aria-hidden="true"> <label for="collapse-section11" aria-hidden="true">V1.0.2 / 25-November-2015</label>
 <div>
-<h2 id="main-changes-11">Main Changes</h2>
+<h2 id="main-changes-12">Main Changes</h2>
 <ul>
 <li>stm32l476g_eval.c
 <ul>
@@ -210,7 +219,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section10" aria-hidden="true"> <label for="collapse-section10" aria-hidden="true">V1.0.1 / 16-September-2015</label>
 <div>
-<h2 id="main-changes-12">Main Changes</h2>
+<h2 id="main-changes-13">Main Changes</h2>
 <ul>
 <li>stm32l476g_eval_qspi.c
 <ul>
@@ -227,7 +236,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section9" aria-hidden="true"> <label for="collapse-section9" aria-hidden="true">V1.0.0 / 26-June-2015</label>
 <div>
-<h2 id="main-changes-13">Main Changes</h2>
+<h2 id="main-changes-14">Main Changes</h2>
 <ul>
 <li>First official release of <strong>STM32L476G_EVAL</strong> board drivers for STM32Cube L4 FW package</li>
 </ul>
